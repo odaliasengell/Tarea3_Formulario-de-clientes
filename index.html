@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Clientes</h1>
+        <form id="clienteForm">
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" <br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" <br>
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" <br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" <br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" <br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" <br>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" <br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    document.getElementById('clienteForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        let cedula = document.getElementById('cedula').value;
+        let apellidos = document.getElementById('apellidos').value;
+        let nombres = document.getElementById('nombres').value;
+        let direccion = document.getElementById('direccion').value;
+        let telefono = document.getElementById('telefono').value;
+        let correo = document.getElementById('correo').value;
+        let ciudad = document.getElementById('ciudad').value;
+        let resultadoDiv = document.getElementById('resultado');
+        resultadoDiv.innerHTML = `
+        <h2>Datos Ingresados:</h2>
+        <p><strong>Cédula:</strong> ${cedula}</p>
+        <p><strong>Apellidos:</strong> ${apellidos}</p>
+        <p><strong>Nombres:</strong> ${nombres}</p>
+        <p><strong>Dirección:</strong> ${direccion}</p>
+        <p><strong>Teléfono:</strong> ${telefono}</p>
+        <p><strong>Correo Electrónico:</strong> ${correo}</p>
+        <p><strong>Ciudad:</strong> ${ciudad}</p>
+    `;
+    });
+</script>

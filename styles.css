@@ -1,0 +1,84 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fce4ec;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 40%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 2px solid #f8bbd0;
+    background-image: url(Oda.webp);
+}
+
+h1 {
+    text-align: center;
+    color: #ec407a;
+    font-size: 2.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #8e24aa;
+    font-size: 1.2em;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ce93d8;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #f3e5f5;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #ba68c8;
+    outline: none;
+    background-color: #e1bee7;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8bbd0;
+    border: 2px solid #f48fb1;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #6a1b9a;
+}
+
+strong {
+    color: #8e24aa;
+}
